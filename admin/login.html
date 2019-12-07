@@ -5,10 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="./favicon.ico" >
+  <link rel="icon" sizes="148*132" href="../images/favicon.png">
   <title>大事件-后台登录页</title>
+  
   <link rel="stylesheet" type="text/css" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
+  
   <!-- 引入bootstrap的css文件 -->
   <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css" />
   <!-- 引入jq文件 -->
@@ -36,7 +40,24 @@
       </form>
     </div>
   </div>
+  <!-- 模态框 -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">温馨提示</h4>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+         
+      </div>
+    </div>
+  </div>
 
 </body>
-
+<script src="./js/login.js"></script>
 </html>
