@@ -9,7 +9,7 @@ $(function () {
             return;
         }
         $.ajax({
-            url: 'http://localhost:8080/api/v1/admin/user/login',
+            url: URL.user_login,
             type: 'post',
             data: {
                 username: userName,
