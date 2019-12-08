@@ -8,12 +8,13 @@ $(function () {
     //         $('.user_info span i').html(res.data.nickname);
     //     }
     // })
-    AMS.doLogin(function(res){
+    AMS.doLogin(function (res) {
         $('.user_info img,.user_center_link img').attr('src', res.data.userPic);
         $('.user_info span i').html(res.data.nickname);
     })
+
     let SRC = ['./main_count.html',
-        ['./article_list.html','./article_release.html', './article_edit.html','./article_category.html'],
+        ['./article_list.html', './article_release.html', './article_edit.html', './article_category.html'],
         './comment_list.html',
         './user.html'
     ];
@@ -39,9 +40,8 @@ $(function () {
                 LIST = SRC[i];
             } else {
                 $('.level02').slideUp();
-                $('#into').attr('src',SRC[i]);
+                $('#into').attr('src', SRC[i]);
             }
-
         })
     })
     $('.level02 li').each(function (i, e) {
@@ -51,10 +51,15 @@ $(function () {
                 $(e).removeClass('hove');
             })
             $(e).addClass('hove');
-            $('#into').attr('src',LIST[i]);
+            $('#into').attr('src', LIST[i]);
         })
     })
-
-
-
+    function LOG() {
+        AMS.doLogin(function (res) {
+            $('.user_info img,.user_center_link img').attr('src', res.data.userPic);
+            $('.user_info span i').html(res.data.nickname);
+        });
+    }
+    window.LOG = LOG;
+    
 })
