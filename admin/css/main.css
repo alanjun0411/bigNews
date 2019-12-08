@@ -130,7 +130,7 @@ body{
 }
 
 .menu .level01{
-    height:50px;
+    /* height:50px; */
     line-height:50px;
 }
 .menu .level01 a{
@@ -140,21 +140,21 @@ body{
     color:#adafb5;
     overflow: hidden;
 }
-.menu .level01.active a{
+.menu .level01 .active {
     background-color: #1378f0;
     color:#fff;
 }
-.menu .level01.active i{
+.menu .level01 .active i{
     color:#fff;
 }
 
-.menu .level01 a:hover{
+/* .menu .level01 a:hover{
     background-color: #1378f0;
     color:#fff;
 }
 .menu .level01 a:hover i{
     color:#fff;
-}
+} */
 .menu .level01 i{
     color:#61646f;
     font-size:22px;
@@ -195,8 +195,13 @@ body{
     overflow: hidden;
 }
 
-.menu .level02 li a:hover{
-    background-color: #1378f0;
+.menu .level02 li.hove{
+    background-color: #dee6e0;
+}
+.menu .level02 li.hove a{
+    color:#fff;
+}
+.menu .level02 li.hove a i{
     color:#fff;
 }
 
